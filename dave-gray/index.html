@@ -1,72 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>My First Web Page</title>
-        <meta charset="UTF-8">
-        <meta name="author" content="Aravindraj G">
-        <meta name="description" content="This page contain all the things I am learning how to create as I learn HTML.">
-        <link rel="icon" href="../assets/html-5.png" type="image/x-icon">
-    </head>
-    <body>
-        <h1>My Goals for the year</h1>
-        <hr>
-        <nav>
-            <ul>
-                <li><a href="#html-area">Learning HTML</a></li>
-                <li><a href="#vacation">Planning a vacation</a></li>
-            </ul>
-        </nav>
-        <hr>
-        <section id="html-area">
-        <h2>I am ready to learn HTML</h2>
-        <p>This is my first web page.</p>
 
-        <h3>My Daily Schedule</h3>
-        <p>Let me tell you how:</p>
-        <ol>
-            <li>... I learn more about web dev.</li>
-            <li>... I plan out my schedule.</li>
-            <li>... I use resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a></abbr>.</li>
-        </ol>
-        </section>
-        <hr>
-        <section id="vacation">
-        <h2>I Am Also Planning a Vacation</h2>
-        <p>I've been working hard and <em>really need a getaway</em>.</p>
-        <p>I live in <abbr title="Tamil Nadu">TN</abbr> so I want to visit a forest.</p>
-        
-        <h3>Places I'd Like to Visit</h3>
-        <ul>
-            <li>
-                <p>I've heard good things about the amazon.</p>
-            </li>
-            <li>
-                <p>I've heard good things about going here:</p>
-                <address>
-                    Mars <br>
-                    4th Planet from Sun <br>
-                    Solar System, Milky Way Galaxy <br>
-                    Universe
-                </address>
-            </li>
-        </ul>
-        
-        <!--ToDo: Add More Places-->
-        <h3>Places I'd Want to Avoid</h3>
-        <dl>
-            <dt>North Pole</dt>
-            <dd>I hear this is <strong>cold</strong>!</dd>
+	<head>
+		<title>My First WebPage</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Aravindraj G">
+		<meta name="description" content="I am learning so I created this page">
+		<link rel="icon" href="../assets/html-5.png" type="image/x-icon">
+	</head>
 
-            <dt>South Pole</dt>
-            <dd>This is also cold.</dd>
+	<body>
+		<header>
 
-            <dt>Mountain Tops</dt>
-            <dd>These are also cold.</dd>
-        </dl>
-        </section>
-        <hr>
+			<h1>My Goal for the year</h1>
 
-        &lt;&lt;&lt; &copy; <a href="about-me.html">Aravindraj</a> &gt;&gt;&gt;
-        <p><a href="/">Back to Top</a></p>
-    </body>
+			<nav>
+				<ul>
+					<li><a href="#learn-html">Learning HTML</a></li>
+					<li><a href="#planning-vacation">Planning a Vacation</a></li>
+				</ul>
+			</nav>
+
+		</header>
+
+		<main>
+
+			<section id="learn-html">
+
+				<h2>I am ready to learn HTML</h2>
+
+				<p>This is my first web page</p>
+
+				<figure>
+					<img src="../assets/html_logo_300x300.png" alt="html5 logo" width="300" height="300">
+					<figcaption>HTML 5 Logo</figcaption>
+				</figure>
+
+				<figure>
+					<figcaption>An Example of HTML 5 Code</figcaption>
+					<code>
+						&lt;h1&gt;Hello World!&lt;/h1&gt;
+					</code>
+				</figure>
+
+				<h3>My Daily Schedule</h3>
+
+				<p>Let me tell you what:</p>
+
+				<ol>
+					<li>I am learning front-end in <abbr title="FreeCodeCamp">FCC</abbr></li>
+					<li>I am also learning English in <a href="https://learn.saylor.org">Saylor Academy</a></li>
+					<li>And Finally I am also learning Learn How to Learn</li>
+					<li>I need to solve more problems by using Python and JavaScripts</li>
+				</ol>
+
+			</section>
+
+			<hr>
+
+			<section id="planning-vacation">
+
+				<h2>I am also Planning Vacation</h2>
+
+				<p>I've been working hard and <em>really need a getaway</em>.</p>
+
+				<p>I live in <abbr title="Tamil Nadu">TN</abbr>, So I want to visit an Ocean, Forest, Mountain...</p>
+
+				<h3>Places I like to Visit</h3>
+
+				<ul>
+					<li>
+						<p>I've heard good thing about caribbean.</p>
+						<figure>
+							<img src="../assets/caribbean.jpg" alt="image of caribbean beach" width="400" height="225" loading="lazy">
+							<figcaption>Caribbean Beach Getaway</figcaption>
+						</figure>
+					</li>
+					<li>
+						<p>I've heard good things about going here:</p>
+						<address>
+							Mars <br>
+							4th Planet from Sun <br>
+							Solar System <br>
+							Milky Way Galaxy <br>
+							Universe <br>
+                            For booking <a href="mailto:contact@mars.uni">Mail Us</a> <br>
+                            We have 600 satellite, If any query <a href="tel:3oy98a4q809f">Call Us</a> <br>
+                            <!--STPS - Satellite Transfer Protocol Secure-->
+                            <!--ssw - solar system web-->
+                            <!--uni - universe-->
+                            <a href="stps://ssw.planet-mars-with-2-moons.uni">About Us</a>
+						</address>
+						<figure>
+							<img src="../assets/Mars.jpg" alt="Image of Planet Mars" width="340" height="340" loading="lazy">
+							<figcaption>Mars is waiting for you</figcaption>
+						</figure>
+					</li>
+				</ul>
+
+				<h3>Places I want to Avoid</h3>
+
+				<dl>
+					<dt>North & South Poles</dt>
+					<dd>I hear this is <strong>cold!!!</strong></dd>
+
+					<dt>Dessert</dt>
+					<dd>I hear this is too <strong>HOT!!!</strong></dd>
+
+					<dt>Volcano</dt>
+					<dd>I hear this is also too <strong>HOT!!!</strong></dd>
+				</dl>
+
+			</section>
+
+		</main>
+
+		<footer>
+
+			<p>&lt;&lt;&lt; &copy; Aravindraj G &gt;&gt;&gt;</p>
+
+		</footer>
+
+	</body>
+
 </html>

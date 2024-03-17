@@ -9,8 +9,7 @@
     </head>
     <body>
         <header>
-            <h1>There should be only one H1 element per page</h1>
-            <hr>
+            <h1>HI, I am <abbr title="There should be only one H1 element per page">h1</abbr> tag</h1>
             <aside>
             <h3>Table of Content</h3>
             <ul>
@@ -27,7 +26,8 @@
         </header>
         <main>
             <section id="headings">
-                <h2>Headings</h2>
+                <h2>Heading</h2>
+                <p>Heading is an arrangement of hierarchy. No special attribute till I learn.</p>
                 <h2>h2</h2>
                 <h3>h3</h3>
                 <h4>h4</h4>
@@ -36,24 +36,31 @@
             </section>
             <section id="block-level-elements">
                 <h2>Block Level Elements</h2>
-                <p>This is a paragraph element with <b>p</b> tags</p>
-                <address>
-                   address line 1 <br>
-                   address line 2 <br>
-                   with <b>address</b> tags and br for line break
-                </address>
+                <dl>
+                <dt>Paragraph Element</dt>
+                <dd>Starts and ends with p tag</dd>
+                <dt>Below example are created with <b>address</b> elements and <b>br</b> tag for line break.</dt>
+                <dd>
+                    <address>
+                        Mars <br>
+                        4th Planet in Solar System <br>
+                        Milky way galaxy <br>
+                        expanding universe <br>
+                    </address>
+                </dd>
+                </dl>
             </section>
             <section id="in-line-elements">
                 <h2>In Line Elements</h2>
-                <p>Hover here to view the abbreviation of <abbr title="World Health Organization">WHO</abbr></p>
-                <b>br</b> tag for break line or new line, like after this line.<br>
-                <p>What is an <abbr title="special importance, value"><em>Emphasis</em></abbr> and this is <strong>Strong</strong>. To <mark>Hightlight like marker</mark> use <b>mark</b> tags</p>
+                <p>abbr tag - with <b>title</b> attribute. for example Hover the word which highlighted by dotes <abbr title="World Health Organization">WHO</abbr></p>
+                <p><b>br</b> tag for break line or insert new line, like after this line.</p><br>
+                <p>This is an <abbr title="special importance, value"><em>Emphasis</em></abbr> and this is <strong>Strong</strong>. To <mark>Hightlight like marker</mark> use <b>mark</b> tags</p>
             </section>
             <section id="multimedia">
                 <h2>Multimedia</h2>
                 <figure>
                     Picture inside the figure element with figure tags. <br>
-                    <img src="../asset/closeup-shot-moon-isolated-black-background-great-articles-about-space.jpg" width="100" alt="Image of moon in closeup">
+                    <img src="../asset/closeup-shot-moon-isolated-black-background-great-articles-about-space.jpg" width="100" alt="Image of moon in closeup" loading="lazy">
                     <figcaption>Inside figure, img and figcaption tags are used</figcaption>
                 </figure>
             </section>
