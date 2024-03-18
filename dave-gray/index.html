@@ -7,17 +7,19 @@
 		<meta name="author" content="Aravindraj G">
 		<meta name="description" content="I am learning so I created this page">
 		<link rel="icon" href="../assets/html-5.png" type="image/x-icon">
+		<link rel="stylesheet" href="style.css">
 	</head>
 
 	<body>
 		<header>
 
 			<h1>My Goal for the year</h1>
-
-			<nav>
+			<!-- aria-label is for labeling the nav element if we use 2 or more per page which easy accessible for screen reader and user will know which is for which -->
+			<nav aria-label="primary-navigation">
 				<ul>
 					<li><a href="#learn-html">Learning HTML</a></li>
 					<li><a href="#planning-vacation">Planning a Vacation</a></li>
+					<li><a href="#contact">Contact Me</a></li>
 				</ul>
 			</nav>
 
@@ -27,40 +29,106 @@
 
 		<main>
 
-			<section id="learn-html">
-
+			<article id="learn-html">
+				
 				<h2>I am ready to learn HTML</h2>
 
 				<p>This is my first web page</p>
 
-				<figure>
-					<img src="../assets/html_logo_300x300.png" alt="html5 logo" width="300" height="300">
-					<figcaption>HTML 5 Logo</figcaption>
-				</figure>
+				<section>
 
-				<figure>
-					<figcaption>An Example of HTML 5 Code</figcaption>
-					<code>
-						&lt;h1&gt;Hello World!&lt;/h1&gt;
-					</code>
-				</figure>
+					<h3>HTML 5</h3>
 
-				<h3>My Daily Schedule</h3>
+					<figure>
+						<img src="../assets/html_logo_300x300.png" alt="html5 logo" width="300" height="300">
+						<figcaption>HTML 5 Logo</figcaption>
+					</figure>
 
-				<p>Let me tell you what:</p>
+					<figure>
+						<figcaption>An Example of HTML 5 Code</figcaption>
+						<code>
+							&lt;h1&gt;Hello World!&lt;/h1&gt;
+						</code>
+					</figure>
 
-				<ol>
-					<li>I am learning front-end from <abbr title="FreeCodeCamp">FCC</abbr></li>
-					<li>I am also learning English in <a href="https://learn.saylor.org" target="_blank">Saylor Academy</a></li>
-					<li>And Finally I am also learning Learn How to Learn</li>
-					<li>I need to solve more problems by using Python and JavaScripts</li>
-				</ol>
+				</section>
 
-			</section>
+				<section>
+
+					<h3>My Daily Schedule</h3>
+
+					<p>Let me tell you what:</p>
+
+					<ol>
+						<li>I am learning front-end from <abbr title="FreeCodeCamp">FCC</abbr></li>
+						<li>I am also learning English in <a href="https://learn.saylor.org" target="_blank">Saylor Academy</a></li>
+						<li>And Finally I am also learning Learn How to Learn</li>
+						<li>I need to solve more problems by using Python and JavaScripts</li>
+					</ol>
+
+					<aside>
+						<!-- Below PT stand for Period of Time in time element -->
+						<details>
+							<summary>Guess the <mark>number of hour</mark> I code per day</summary>
+							<p>I start at <time datetime="08:00">8 am</time> and I write code for <time datetime="PT3H">3 hours</time> every morning.</p>
+						</details>
+					</aside>
+
+					<br>
+
+					<table>
+						<caption>My Daily Schedule</caption>
+						<thead>
+							<tr>
+								<th>&nbsp;</th>
+								<th scope="col">Time</th>
+								<th scope="col">Activity</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">Morning</th>
+								<td><time datetime="08:00">8 AM</time>-<time datetime="11:00">11 AM</time></td>
+								<td>Write Code</td>
+							</tr>
+
+							<tr>
+								<th scope="row">Break</th>
+								<td><time datetime="11:00">11 AM</time>-<time datetime="12:00">12 PM</time></td>
+								<td>Eat Lunch</td>
+							</tr>
+
+							<tr>
+								<th scope="row">Afternoon</th>
+								<td><time datetime="12:00">12 PM</time>-<time datetime="05:00">5 PM</time></td>
+								<td>Study for other Courses</td>
+							</tr>
+
+							<tr>
+								<th scope="row">Evening</th>
+								<td rowspan="2">All Other Times</td>
+								<td>Free Time</td>
+							</tr>
+
+							<tr>
+								<th scope="row">Night</th>
+								<td>Sleep</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="3">And that's what I do every day, 5 days a week. Just eat, sleep, code ..and recharge!</td>
+							</tr>
+						</tfoot>
+					</table>
+
+				</section>
+
+			</article>
 
 			<hr>
 
-			<section id="planning-vacation">
+			<article id="planning-vacation">
 
 				<h2>I am also Planning Vacation</h2>
 
@@ -68,52 +136,99 @@
 
 				<p>I live in <abbr title="Tamil Nadu">TN</abbr>, So I want to visit an Ocean, Forest, Mountain...</p>
 
-				<h3>Places I like to Visit</h3>
+				<section>
+					<h3>Places I'd like to Visit</h3>
 
-				<ul>
-					<li>
-						<p>I've heard good thing about caribbean.</p>
-						<figure>
-							<img src="../assets/caribbean.jpg" alt="image of caribbean beach" width="400" height="225" loading="lazy">
-							<figcaption>Caribbean Beach Getaway</figcaption>
-						</figure>
-					</li>
-					<li>
-						<p>I've heard good things about going here:</p>
-						<address>
-							Mars, <br>
-							4th Planet from Sun, <br>
-							Solar System, <br>
-							Milky Way Galaxy, <br>
-							Universe <br>
-                            For booking <a href="mailto:contact@mars.uni">Mail Us</a> <br>
-                            We have 600 satellite, If any query <a href="tel:3oy98a4q809f">Call Us</a> <br>
-                            <!--STPS - Satellite Transfer Protocol Secure-->
-                            <!--ssw - solar system web-->
-                            <!--uni - universe-->
-                            <a href="stps://ssw.planet-mars-with-2-moons.uni">About Us</a>
-						</address>
-						<figure>
-							<img src="../assets/Mars.jpg" alt="Image of Planet Mars" width="340" height="340" loading="lazy">
-							<figcaption>Mars is waiting for you</figcaption>
-						</figure>
-					</li>
-				</ul>
+					<ul>
+						<li>
+							<p>I've heard good thing about caribbean.</p>
+							<figure>
+								<img src="../assets/caribbean.jpg" alt="image of caribbean beach" width="400" height="225" loading="lazy">
+								<figcaption>Caribbean Beach Getaway</figcaption>
+							</figure>
+						</li>
+						<li>
+							<p>I've heard good things about going here:</p>
+							<address>
+								Mars, <br>
+								4th Planet from Sun, <br>
+								Solar System, <br>
+								Milky Way Galaxy, <br>
+								Universe <br>
+								For booking <a href="mailto:contact@mars.uni">Mail Us</a> <br>
+								We have 600 satellite, If any query <a href="tel:3oy98a4q809f">Call Us</a> <br>
+								<!-- STPS - Satellite Transfer Protocol Secure -->
+								<!-- ssw - solar system web -->
+								<!-- uni - universe -->
+								<a href="stps://ssw.planet-mars-with-2-moons.uni">About Us</a>
+							</address>
+							<figure>
+								<img src="../assets/Mars.jpg" alt="Image of Planet Mars" width="340" height="340" loading="lazy">
+								<figcaption>Mars is waiting for you</figcaption>
+							</figure>
+						</li>
+					</ul>
 
-				<h3>Places I want to Avoid</h3>
+				</section>
 
-				<dl>
-					<dt>North & South Poles</dt>
-					<dd>I hear this is <strong>cold!!!</strong></dd>
+				<section>
+					<h3>Places I want to Avoid</h3>
 
-					<dt>Dessert</dt>
-					<dd>I hear this is too <strong>HOT!!!</strong></dd>
+					<dl>
+						<dt>North & South Poles</dt>
+						<dd>I hear this is <strong>COLD!!!</strong></dd>
 
-					<dt>Volcano</dt>
-					<dd>I hear this is also too <strong>HOT!!!</strong></dd>
-				</dl>
+						<dt>Dessert</dt>
+						<dd>I hear this is too <strong>HOT!!!</strong></dd>
 
-			</section>
+						<dt>Volcano</dt>
+						<dd>I hear this is also too <strong>HOT!!!</strong></dd>
+					</dl>
+				</section>
+
+			</article>
+
+			<hr>
+
+			<article id="contact">
+				<h2>Contact Me</h2>
+				<p>I'd really like to hear from you!</p>
+
+				<form action="https://httpbin.org/get" method="get">
+					<p>
+						<label for="firstName">First Name:</label>
+						<input type="text" name="firstName" id="firstName" placeholder="Jane" autofocus required autocomplete="on">
+					</p>
+					<p>
+						<label for="lastName">Last Name:</label>
+						<input type="text" name="lastName" id="lastName" placeholder="Doe" required autocomplete="on">
+					</p>
+					<p>
+						<label for="password">Password:</label>
+						<input type="password" name="password" id="password" placeholder="your password" required>
+					</p>
+					<p>
+						<label for="phone">Phone:</label>
+						<input type="tel" name="phone" id="phone" placeholder="9876543210" required pattern="[0-9]{10}">
+					</p>
+					<p>
+						<label for="decade">Favorite Decade:</label>
+						<input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+					</p>
+					<p>
+						<label for="coffee">Favorite Coffee:</label>
+						<select name="coffee" id="coffee">
+							<option value="regular coffee">Regular Coffee</option>
+							<option value="iced coffee">Iced Coffee</option>
+							<option value="latte" selected>Latte</option>
+							<option value="cappuccino">Cappuccino</option>
+							<option value="cortado">Cortado</option>
+							<option value="americano">Americano</option>
+							<option value="others">Others</option>
+						</select>
+					</p>
+				</form>
+			</article>
 
 		</main>
 
