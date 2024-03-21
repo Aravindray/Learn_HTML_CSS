@@ -125,6 +125,72 @@ aside {
     filter: grayscale(100%);
 }
 
+/* Learning Alpha */
+
+.alpha {
+    background-image: url('https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg');
+    color: white;
+}
+
+span {
+    font-weight: bold;
+}
+
+.zero {
+    background-color: rgb(255, 0, 0, 0);
+    padding: 45px;
+}
+
+.zero-one {
+    background-color: rgb(255, 0, 0, 0.1);
+    padding: 45px;
+}
+
+.zero-two {
+    background-color: rgb(255, 0, 0, 0.2);
+    padding: 45px;
+}
+
+.zero-three {
+    background-color: rgb(255, 0, 0, 0.3);
+    padding: 45px;
+}
+
+.zero-four {
+    background-color: rgb(255, 0, 0, 0.4);
+    padding: 45px;
+}
+
+.zero-five {
+    background-color: rgb(255, 0, 0, 0.5);
+    padding: 45px;
+}
+
+.zero-six {
+    background-color: rgb(255, 0, 0, 0.6);
+    padding: 45px;
+}
+
+.zero-seven {
+    background-color: rgb(255, 0, 0, 0.7);
+    padding: 45px;
+}
+
+.zero-eight {
+    background-color: rgb(255, 0, 0, 0.8);
+    padding: 45px;
+}
+
+.zero-nine {
+    background-color: rgb(255, 0, 0, 0.9);
+    padding: 45px;
+}
+
+.one {
+    background-color: rgba(255, 0, 0, 1);
+    padding: 45px;
+}
+
 /* footer */
 
 footer {
