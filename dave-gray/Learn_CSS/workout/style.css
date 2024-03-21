@@ -1,0 +1,115 @@
+body {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* CSS Style */
+
+.fe218b {
+    color: #fe218b;
+}
+
+.fed700 {
+    color: #fed700;
+}
+
+.fe21b0 {
+    color: #21b0fe;
+}
+
+.colors {
+    background-color: #ff0000;
+    color: white;
+    font-family: 'Dr Sugiyama';
+    font-weight: 100;
+}
+
+/* In build Color */
+
+.deep-sky-blue {
+    background-color: deepskyblue;
+    padding: 30px;
+    font-weight: bolder;
+}
+
+.name-140 {
+    border: 2px solid red;
+}
+
+/* HEX */
+
+.hex {
+    border: 2px solid yellow;
+}
+
+.ff006e {
+    background-color: #ff006e;
+    padding: 30px;
+    font-weight: bolder;
+}
+
+/* RGB */
+
+.rgb {
+    color: white;
+    background-image: url('https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg');
+    border: 2px solid blue;
+    background-size: cover;
+    background-position: center;
+}
+
+.ee964b {
+    background-color: rgb(238, 150, 75);
+    padding: 30px;
+    font-weight: bolder;
+}
+
+.bf0134f {
+    background-color: rgba(27, 240, 19, 0.308);
+    padding: 30px;
+    font-weight: bolder;
+}
+
+.rgb-1 {
+    border-top: 2px dotted white;
+}
+
+/* HSL */
+
+.hsl {
+    /* color: white; */
+    background-image: url(../../../assets/jellyfish.jpg);
+    border: 3px solid green;
+    background-size: cover;
+    background-position: center;
+}
+
+.hs1-1 {
+    border-top: 2px dotted white;
+}
+
+.normal-hsl {
+    background-color: hsl(54, 99%, 56%);
+    padding: 30px;
+    font-weight: bolder;
+}
+
+.alpha-hsl {
+    background-color: hsla(178, 56%, 91%, 0.637);
+    padding: 30px;
+    font-weight: bolder;
+}
+
+/* Aside */
+
+aside {
+    border: 2px solid pink;
+}
+
+/* footer */
+
+footer {
+    border: 2px solid purple;
+}
