@@ -119,6 +119,30 @@ main {
     color: white;
 }
 
+/* rem and em from dave */
+
+.not-h2 {
+    border: 2px dashed red;
+    padding: 0.5em;
+}
+
+.not-h2-1 {
+    border: 2px dashed red;
+    font-size: 3rem;
+    padding: 0.5em;
+}
+
+.not-p {
+    border: 1px solid green;
+    font-size: 2rem;
+    padding: 1em;
+}
+
+.not-p-1 {
+    border: 1px solid green;
+    padding: 1em;
+}
+
 /* Experimental Part */
 
 .in-box-1 {
