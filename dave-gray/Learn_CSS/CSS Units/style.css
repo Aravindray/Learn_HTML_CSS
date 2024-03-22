@@ -143,6 +143,16 @@ main {
     padding: 1em;
 }
 
+/* ch unit */
+
+.lorem {
+    width: 40ch;
+}
+
+.lorem-1 {
+    width: 26ch;
+}
+
 /* Experimental Part */
 
 .in-box-1 {
