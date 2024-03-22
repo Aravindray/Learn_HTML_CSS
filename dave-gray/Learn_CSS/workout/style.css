@@ -1,0 +1,53 @@
+* {
+    text-align: center;
+}
+
+/* heading */
+
+.box {
+    padding: 3px;
+    background-color: red;
+    color: white;
+    font-family: fantasy;
+}
+
+/* Content Box */
+
+.cb {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    border: 1px solid red;
+    font-size: 2rem;
+}
+
+.cb-h {
+    margin: 2em;
+    outline: 2px solid blue;
+    outline-offset: 2em;
+    padding: 1.2em;
+}
+
+.cb-p {
+    font-size: 1.5rem;
+    margin: 3em;
+    padding: 1.5em;
+    outline: 2px solid green;
+    outline-offset: 3em;
+}
+
+/* hr */
+
+hr {
+    border: 6px solid pink;
+}
+
+/* Border Box */
+
+.bb {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 2rem;
+    border: 1px dotted orangered;
+}
