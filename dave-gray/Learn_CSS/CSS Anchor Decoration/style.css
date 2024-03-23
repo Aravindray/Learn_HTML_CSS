@@ -1,0 +1,40 @@
+/* Basic */
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+}
+
+.dancing {
+    font-family: 'Dancing Script';
+    color: magenta;
+}
+
+.great {
+    font-family: 'Great Vibes';
+    color: turquoise;
+}
+
+.zeyada {
+    font-family: 'Zeyada';
+    color: salmon;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* pseudo-class */
+
+a:visited {
+    color: dodgerblue;
+}
+
+a:hover, a:focus {
+    color: limegreen;
+    cursor: alias;
+}
+
+a:active {
+    color: orange;
+}
