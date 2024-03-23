@@ -1,0 +1,79 @@
+/* CSS Typography */
+body {
+    font-size: 2rem;
+}
+
+hr {
+    border: 5px solid pink;
+}
+
+.class-c {
+    color: red;
+    font-family: 'Truculenta';
+}
+
+.class-s-2 {
+    color: blue;
+    font-family: 'Dancing Script';
+}
+
+.class-s-1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.typo {
+    font-family: 'Nabla';
+}
+
+.graphy {
+    font-family: 'Honk';
+}
+/* forms */
+/* input, button {
+    font-size: inherit;
+} */
+
+.ta-left {
+    text-align: left;
+}
+
+.ta-right {
+    text-align: right;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.ta-justify {
+    text-align: justify;
+}
+
+.indent {
+    text-indent: 2em;
+}
+
+.lne-hgt {
+    line-height: 1.5;
+}
+
+.ltr-spacing {
+    letter-spacing: 1em;
+}
+
+.wrd-spacing {
+    word-spacing: 1em;
+}
+
+.h-wrd-break {
+    width: 50%;
+}
+
+.wrd-break {
+    border: 1px solid black;
+    word-break: break-all;
+}
+
+.fnt-wgt {
+    font-weight: 800;
+}
