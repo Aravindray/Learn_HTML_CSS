@@ -60,3 +60,61 @@ code {
     color: white;
     background-color: darkslateblue;
 }
+
+/* list pseudo class */
+
+.slct-nth-child li:nth-child(3) {
+    color: red;
+    list-style-type: circle;
+}
+
+.slct-nth-child li:nth-child(1) {
+    color: green;
+    list-style-type: square;
+}
+
+.slct-nth-child li:nth-child(2) {
+    color: blue;
+    text-align: right;
+    list-style-position: inside;
+}
+
+.slct-nth-child li:nth-child(4) {
+    color: orchid;
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+}
+
+.infinity-notes li:nth-child(odd){
+    list-style-image: url(../../../assets/taco.ico);
+}
+
+.infinity-notes li:nth-child(even){
+    list-style-image: url(../../../assets/notes.png);
+}
+
+.pseudo ::marker {
+    content: "Only $5 >> ";
+}
+
+.pseudo li:nth-child(odd) {
+    color: red;
+}
+
+.pseudo li:nth-child(even) {
+    color: blue;
+}
+
+/* footer */
+
+.experimental {
+    color: white;
+    background-color: black;
+    border: 5px solid blue;
+    padding: 50px;
+    text-align: center;
+    outline: 5px solid green;
+    margin: 50px;
+    outline-offset: 50px;
+}
