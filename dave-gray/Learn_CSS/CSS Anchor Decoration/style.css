@@ -20,6 +20,8 @@ body {
     color: salmon;
 }
 
+/* Anchor decoration */
+
 a {
     text-decoration: none;
 }
