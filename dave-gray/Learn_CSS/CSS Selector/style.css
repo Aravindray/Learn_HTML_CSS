@@ -1,0 +1,46 @@
+/* Universal Selector - CSS Reset */
+
+* {
+    font-family: monospace;
+}
+
+/* Element Selector */
+body {
+    font-size: 22px;
+}
+
+/* group selector */
+
+h1, h2 {
+    color: blue;
+}
+
+p {
+    color: purple;
+}
+
+/* nested selector - Not very useful Instead use class selector */
+
+/* p span {
+    text-transform: uppercase;
+    background-color: gold;
+} */
+
+
+/* class selector */
+
+.grey {
+    color: grey;
+}
+
+.highlight {
+    color: red;
+    text-transform: uppercase;
+    background-color: limegreen;
+}
+
+/* id selector - Mostly avoid in css */
+
+#second {
+    font-style: italic;
+}
