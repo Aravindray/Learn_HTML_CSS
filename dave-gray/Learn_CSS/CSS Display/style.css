@@ -1,0 +1,74 @@
+body {
+    font-size: 2rem;
+}
+
+main {
+    color: white;
+    background-color: darkviolet;
+}
+
+p {
+    background-color: skyblue;
+}
+
+.opposite {
+    background-color: rgba(255, 140, 0, 0.452);
+    padding: 55px;
+    margin: 20px 20px; /* Top or Bottom Margin not applied */
+    height: 200px; /* Not changed */
+}
+
+.opposite-in-block {
+    display: inline-block;
+    background-color: lime;
+    padding: 50px;
+    margin-top: 50px;
+    height: 100px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-align: right;
+    background-color: lightsalmon;
+}
+
+li {
+    display: inline-block;
+    margin-inline: 0.5rem;
+    padding: 0.5rem;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+li a:focus, li a:hover {
+    text-decoration: underline;
+}
+
+/* Experimental */
+
+.mixer {
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+}
+
+.blue {
+    background-color: blue;
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+    color: red;
+}
+
+.red {
+    background-color: red;
+    border-radius: 0 0 20px 20px;
+    padding: 10px;
+    color: blue;
+}
