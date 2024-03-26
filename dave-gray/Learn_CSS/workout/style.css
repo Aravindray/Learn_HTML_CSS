@@ -1,0 +1,17 @@
+body {
+    font-size: 1.5rem;
+}
+
+section {
+    /* column-count: 4;
+    column-width: 250px; */
+    /* column short hand 
+    column: count width
+    */
+    columns: 4 250px;
+    column-rule: 1px solid black;
+}
+
+section p {
+    margin-top: 0;
+}
