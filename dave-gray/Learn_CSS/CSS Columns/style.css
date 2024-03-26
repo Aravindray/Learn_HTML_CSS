@@ -1,0 +1,36 @@
+body {
+    font-size: 1.5rem;
+}
+
+/* column short hand 
+column: count width */
+
+section {
+    /* column-count: 4;
+    column-width: 250px; */    
+    columns: 4 250px;
+    column-rule: 1px solid black;
+}
+
+section p {
+    margin-top: 0;
+}
+
+.section-2 h2 {
+    margin-top: 0;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    /* break-before: column; */ /* Don't use this */
+}
+
+.quote {
+    text-align: center;
+    font-size: 2rem;
+    column-span: all;
+    margin-top: 2rem;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
