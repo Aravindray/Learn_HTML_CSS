@@ -1,0 +1,120 @@
+body {
+    font-size: 2rem;
+    color: black;
+    min-height: 200vh;
+}
+
+.parent {
+    background-color: papayawhip;
+    padding: 1rem;
+}
+
+.wrapper {
+    border: 3px solid black;
+    color: white;
+}
+
+/* Relative */
+
+.relative-child-one {
+    background-color: #fe218b;
+    padding-left: 6px;
+    position: relative;
+    left: 40px;
+    top: 30px;
+}
+
+.relative-child-two {
+    background-color: #fed700;
+    padding-left: 6px;
+}
+
+.relative-child-three {
+    background-color: #21b0fe;
+    padding-left: 6px;
+}
+
+/* Absolute Inside Relative */
+
+.absolute {
+    position: relative;
+}
+
+.absolute-child-one {
+    background-color: #84ffc9;
+    padding-left: 6px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.absolute-child-two {
+    background-color: #aab2ff;
+    padding-left: 6px;
+}
+
+.absolute-child-three {
+    background-color: #eca0ff;
+    padding-left: 6px;
+}
+
+/* Absolute inside Absolute */
+
+.absolute-in {
+    position: absolute;
+}
+
+.absolute-in-child-one {
+    background-color: #156064;
+    padding-left: 6px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.absolute-in-child-two {
+    background-color: #00c49a;
+    padding-left: 6px;
+}
+
+.absolute-in-child-three {
+    background-color: #f8e16c;
+    padding-left: 6px;
+}
+
+/* Sticky */
+
+.sticky {
+    position: relative;
+    height: 200vh;
+}
+
+.sticky-child {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+/* fixed */
+
+.fixed {
+    position: relative;
+}
+
+.fixed-child-one {
+    background-color: #f61067;
+    padding-left: 6px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.fixed-child-two {
+    background-color: #5e239d;
+    padding-left: 6px;
+}
+
+.fixed-child-three {
+    background-color: #00f0b5;
+    padding-left: 6px;
+}

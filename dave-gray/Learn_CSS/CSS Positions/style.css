@@ -1,0 +1,65 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.5rem;
+    min-height: 200vh;
+}
+
+/* Article 1 */
+
+.outer-container {
+    position: relative;
+    border: 3px solid black;
+    width: 75%;
+    height: 80vh;
+    margin: 100px auto;
+}
+
+.inner-container {
+    /* position: relative; */
+    border: 3px dotted teal;
+    width: 80%;
+    margin: 50px auto;
+    height: 50vh;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.relative {
+    position: relative;
+    top: 0px;
+    left: 250px;
+    background-color: aqua;
+}
+
+.absolute {
+    position: absolute;
+    background-color: lightgreen;
+    top: 0;
+    left: 0;
+}
+
+.fixed {
+    position: fixed;
+    background-color: lightsalmon;
+    top: 0;
+    right: 0;
+}
+
+.sticky {
+    position: sticky;
+    background-color: paleturquoise;
+    top: 0;
+}
