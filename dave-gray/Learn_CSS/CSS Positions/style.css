@@ -10,7 +10,9 @@ body {
     min-height: 200vh;
 }
 
-html { scroll-behavior: smooth; }
+html { 
+    scroll-behavior: smooth; 
+}
 
 /* Article 1 */
 
@@ -112,4 +114,42 @@ a:visited {
     left: 0;
     top: 30vh;
     z-index: 1;
+}
+
+/* Experimental */
+
+.mixer-1 {
+    border: 1px solid black;
+}
+
+.exp-relative-red {
+    background-color: rgba(255, 0, 0, 0.5);
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    left: 50px;
+    display: inline-block;
+}
+
+.exp-relative-blue {
+    background-color: rgba(0, 0, 255, 0.5);
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.mixer-2 {
+    border: 1px solid black;
+}
+
+.exp-relative-green {
+    background-color: rgba(0, 255, 0, 0.5);
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    display: inline-block;
 }
