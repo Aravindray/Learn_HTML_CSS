@@ -10,6 +10,8 @@ body {
     min-height: 200vh;
 }
 
+html { scroll-behavior: smooth; }
+
 /* Article 1 */
 
 .outer-container {
@@ -62,4 +64,52 @@ body {
     position: sticky;
     background-color: paleturquoise;
     top: 0;
+}
+
+/* Article 2 */
+
+.article-2 {
+    position: relative;
+}
+
+section h2 {
+    color: white;
+    padding: 1rem;
+    /* margin: 1rem; */
+}
+
+section p {
+    padding: 1rem;
+    /* margin: 1rem; */
+}
+
+.header-one { background-color: red; position: sticky; top: 0;}
+.header-two { background-color: green; position: sticky; top: 0;}
+.header-three { background-color: blue; position: sticky; top: 0;}
+
+footer li {
+    display: inline;
+    padding: 1rem;
+}
+
+footer {
+    background-color: blueviolet;
+    color: white;
+    padding: 1rem;
+    position: sticky;
+    bottom: 0;
+}
+
+a:visited {
+    color: white;
+}
+
+.social {
+    background-color: aqua;
+    padding: 10px;
+    width: 55px;
+    position: fixed;
+    left: 0;
+    top: 30vh;
+    z-index: 1;
 }
