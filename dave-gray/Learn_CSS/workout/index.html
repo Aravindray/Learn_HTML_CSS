@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning CSS - Grid</title>
+    <title>Learning CSS - Images</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="../../../assets/css.png">
 </head>
 <body>
-    <header><h1>CSS Grid</h1></header> <br> <hr> <br> 
+    <header><h1>CSS Images</h1></header> <br> <hr> <br> 
     <!-- Remove Part Start -->
-    
+    <section class="example">
+        <h2>Find the extra space?</h2>
+        <p class="img-para"><img src="../../../assets/pat1.png" alt="Image of Pattern" width="200" height="200"> This is a paragraph with image.</p>
+        <details>
+            <summary>Did you find the extra space?</summary>
+            <p>Well Done!, you have found the extra bottom space below the image because it's inline element.</p>
+        </details>
+    </section>
+    <br> <hr> <br>
+    <section class="example">
+        <h2>Image as block</h2>
+        <p><img src="../../../assets/pat1.png" alt="Image of Pattern" width="200" height="200"></p>
+    </section>
+    <br> <hr> <br>
+    <section class="hero">
+        <figure class="profile-pic-figure">
+            <img src="../../../assets/profile-800x800.png" alt="women with camera" width="800" height="800">
+            <figcaption>Jane Deo</figcaption>
+        </figure>
+    </section>
     <!-- Remove Part End -->
 </body>
 </html>
