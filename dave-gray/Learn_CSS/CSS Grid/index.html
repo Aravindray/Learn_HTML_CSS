@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning CSS - Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../../../assets/css.png">
+</head>
+<body>
+    <header><h1>CSS Grid</h1></header> <br> <hr> <br> 
+    <!-- Remove Part Start -->
+    <article>
+        <h2>Grid - Auto Flow</h2>
+        <div class="container-1" title="grid-auto-flow: 'column'">
+            <div class="box" style="background-color: #f72585;">1</div>
+            <div class="box" style="background-color: #b5179e;">2</div>
+            <div class="box" style="background-color: #480ca8;">3</div>
+            <div class="box" style="background-color: #3f37c9;">4</div>
+            <div class="box" style="background-color: #4895ef;">5</div>
+            <div class="box" style="background-color: #4cc9f0;">6</div>
+        </div>
+    </article>
+    <br> <hr> <br>
+    <article>
+        <h2>Grid - Template Column with repeat()</h2>
+        <div class="container-2" title="grid-template-column: 'repeat(2, 2fr 1fr)'">
+            <div class="box" style="background-color: #f72585;">1</div>
+            <div class="box" style="background-color: #b5179e;">2</div>
+            <div class="box" style="background-color: #480ca8;">3</div>
+            <div class="box" style="background-color: #3f37c9;">4</div>
+            <div class="box" style="background-color: #4895ef;">5</div>
+            <div class="box" style="background-color: #4cc9f0;">6</div>
+        </div>
+    </article>
+    <br> <hr> <br>
+    <article>
+        <h2>Grid - Auto Rows with minmax()</h2>
+        <div class="container-3" title="grid-auto-rows: ''">
+            <div class="box" style="background-color: #f72585;">1</div>
+            <div class="box" style="background-color: #b5179e;">2</div>
+            <div class="box" style="background-color: #480ca8;">3</div>
+            <div class="box" style="background-color: #3f37c9;">4</div>
+            <div class="box" style="background-color: #4895ef;">5</div>
+            <div class="box" style="background-color: #4cc9f0;">6</div>
+        </div>
+    </article>
+    <br> <hr> <br>
+    <article>
+        <h2>Grid - Gap</h2>
+        <div class="grid-in-column">
+            <div class="container-4" title="row-gap: '4px'">
+                <div class="box" style="background-color: #f72585;">1</div>
+                <div class="box" style="background-color: #b5179e;">2</div>
+                <div class="box" style="background-color: #480ca8;">3</div>
+                <div class="box" style="background-color: #3f37c9;">4</div>
+                <div class="box" style="background-color: #4895ef;">5</div>
+                <div class="box" style="background-color: #4cc9f0;">6</div>
+            </div>
+            <div class="container-5" title="column-gap: '4px'">
+                <div class="box" style="background-color: #f72585;">1</div>
+                <div class="box" style="background-color: #b5179e;">2</div>
+                <div class="box" style="background-color: #480ca8;">3</div>
+                <div class="box" style="background-color: #3f37c9;">4</div>
+                <div class="box" style="background-color: #4895ef;">5</div>
+                <div class="box" style="background-color: #4cc9f0;">6</div>
+            </div>
+        </div>
+        <br> <hr> <br>
+        <div class="container-6" title="gap: 'row column'">
+            <div class="box" style="background-color: #f72585;">1</div>
+            <div class="box" style="background-color: #b5179e;">2</div>
+            <div class="box" style="background-color: #480ca8;">3</div>
+            <div class="box" style="background-color: #3f37c9;">4</div>
+            <div class="box" style="background-color: #4895ef;">5</div>
+            <div class="box" style="background-color: #4cc9f0;">6</div>
+        </div>
+    </article>
+    <br> <hr> <br>
+    <article>
+        <h2>Grid Items - Grid Column/Row Start/End</h2>
+        <div class="container-7" title="grid-column: 'start / end'">
+            <div class="box con-7-box-1" style="background-color: #f72585;">1</div>
+            <div class="box con-7-box-2" style="background-color: #b5179e;">2</div>
+            <div class="box con-7-box-3" style="background-color: #480ca8;">3</div>
+            <div class="box con-7-box-4" style="background-color: #3f37c9;">4</div>
+            <div class="box con-7-box-5" style="background-color: #4895ef;">5</div>
+            <div class="box con-7-box-6" style="background-color: #4cc9f0;">6</div>
+        </div>
+    </article>
+    <br> <hr> <br>
+    <h2>Grid - Area</h2>
+    <section class="final">
+        <header class="final-header el"><h1>Header</h1></header>
+        <main class="final-main">
+            <div class="final-box final-box-1" style="background-color: #f72585;">1</div>
+            <div class="final-box final-box-2" style="background-color: #b5179e;">2</div>
+            <div class="final-box final-box-3" style="background-color: #480ca8;">3</div>
+            <div class="final-box final-box-4" style="background-color: #3f37c9;">4</div>
+            <div class="final-box final-box-5" style="background-color: #4895ef;">5</div>
+            <div class="final-box final-box-6" style="background-color: #4cc9f0;">6</div>
+            <!-- <div class="final-box final-box-7" style="background-color: #000;">7</div> -->
+        </main>
+        <aside class="final-sidebar el"><h2>Sidebar</h2></aside>
+        <footer class="final-footer el"><h2>Footer</h2></footer>
+    </section>
+    <!-- Remove Part End -->
+</body>
+</html>
