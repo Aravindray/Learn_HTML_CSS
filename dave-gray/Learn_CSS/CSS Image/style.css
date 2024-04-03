@@ -1,0 +1,205 @@
+/* Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+img { 
+    display: block;
+}
+
+/* Utility */
+
+.nowrap {
+    white-space: nowrap;
+}
+
+/* Section 1 */
+
+details {
+    cursor: pointer;
+}
+
+.img-para {
+    border: 3px solid red;
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+}
+
+.img-para img {
+    display: inline;
+    width: 25%;
+    height: auto;
+}
+
+/* Hero */
+
+.hero {
+    border: 2px solid purple;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-pic-figure {
+    border: 2px solid;
+    width: 35%;
+    padding: 0.5rem;
+}
+
+.profile-pic-figure img {
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 9px double gray;
+    border-radius: 50%;
+}
+
+.hero-h1 {
+    font-size: 500%;
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+/* Background Images */
+
+.hero-1 {
+    border: 2px solid purple;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    background-color: bisque;
+    background-image: url('../../../assets/pat1.png');
+}
+
+.hero-1-h1 {
+    font-size: 500%;
+    color: #fff;
+}
+
+/* Background repeat */
+
+.hero-2 {
+    border: 2px solid purple;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    background-color: bisque;
+    background-image: url('../../../assets/pat2-transparency.png');
+    background-repeat: repeat-x;
+}
+
+.hero-2-h1 {
+    font-size: 500%;
+    /* color: #fff; */
+}
+
+/* Background Size */
+
+.hero-3 {
+    border: 2px solid purple;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    background-color: bisque;
+    background-image: url('../../../assets/Image-of-Jellyfish.jpg');
+    /* background-repeat: repeat; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: contain; */
+}
+
+.hero-3-h1 {
+    font-size: 500%;
+    color: #fff;
+}
+
+/* Background Size */
+
+.hero-4 {
+    border: 2px solid purple;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    background-color: bisque;
+    background-image: url('../../../assets/stars-dark-sky-beautiful-stunning.jpg');
+    /* background-repeat: repeat; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* background-size: contain; */
+}
+
+.hero-4-h1 {
+    font-size: 500%;
+    color: #fff;
+    text-shadow: 5px 5px 3px red;
+    background-color: hsla(240, 20%, 99%, 0.322);
+    padding: 0.25rem;
+    border-radius: 15px;
+}
+
+/* Container */
+
+.container {
+    background-color: bisque;
+    background-image: url('../../../assets/Clippy.jpg');
+    /* background-repeat: repeat; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* background-size: contain; */
+    background-position: bottom;
+}
+
+.hero-5 {
+    border: 2px solid purple;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    background-color: hsla(0, 0%, 5%, 0.514);
+}
+
+.hero-5-h1 {
+    font-size: 500%;
+    color: #fff;
+    text-shadow: 5px 5px 3px blue;
+    padding: 0.25rem;
+    border-radius: 15px;
+}
+
+/* Gradient */
+
+.gradient {
+    background-color: aliceblue;
+    border: 2px solid;
+    height: 500px;
+}
+
+.demo {
+    background-image: linear-gradient(to top, #fff, steelblue, blue, purple);
+    height: 500px;
+}
