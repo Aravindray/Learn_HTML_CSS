@@ -14,6 +14,13 @@ img {
     display: block;
 }
 
+/* Utility */
+
+.nowrap {
+    white-space: nowrap;
+}
+
+
 /* Section 1 */
 
 details {
@@ -33,3 +40,97 @@ details {
 }
 
 /* Hero */
+
+.hero {
+    border: 2px solid purple;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-pic-figure {
+    border: 2px solid;
+    width: 35%;
+    padding: 0.5rem;
+}
+
+.profile-pic-figure img {
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 9px double gray;
+    border-radius: 50%;
+}
+
+.hero-h1 {
+    font-size: 500%;
+}
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+/* Background Images */
+
+.hero-1 {
+    border: 2px solid purple;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    background-color: bisque;
+    background-image: url('../../../assets/pat1.png');
+}
+
+.hero-1-h1 {
+    font-size: 500%;
+    color: #fff;
+}
+
+/* Background repeat */
+
+.hero-2 {
+    border: 2px solid purple;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    background-color: bisque;
+    background-image: url('../../../assets/pat2-transparency.png');
+    background-repeat: repeat-x;
+}
+
+.hero-2-h1 {
+    font-size: 500%;
+    /* color: #fff; */
+}
+
+/* Background Size */
+
+.hero-3 {
+    border: 2px solid purple;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    background-color: bisque;
+    background-image: url('../../../assets/Image-of-Jellyfish.jpg');
+    /* background-repeat: repeat; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: contain; */
+}
+
+.hero-3-h1 {
+    font-size: 500%;
+    color: #fff;
+}
