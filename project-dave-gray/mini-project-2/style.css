@@ -21,6 +21,7 @@ body {
 /* header */
 
 header {
+    text-align: center;
     position: sticky;
     top: 0;
     color: white;
@@ -43,12 +44,70 @@ a {
 
 /* main */
 
+main {
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    min-height: 100vh;
+}
+
+div {
+    border: 2px double;
+    padding: 1rem;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c9d3dc;
+    gap: 0.5rem;
+    border-radius: 30px;
+}
+
+img {
+    min-width: 150px;
+    width: 100%;
+    height: auto;
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+figcaption {
+    position: absolute;
+    left: -10000px;
+}
+
 
 /* footer */
 
 footer {
+    text-align: center;
     position: sticky;
     bottom: 0;
     color: white;
     background-color: #1d273c;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 782px) {
+    nav {
+        display: none;
+    }
+
+    div h2 {
+        order: -1;
+    }
+
+    #matt {
+        order: -1;
+    }
+
+    #jane {
+        order: -1;
+    }
 }
