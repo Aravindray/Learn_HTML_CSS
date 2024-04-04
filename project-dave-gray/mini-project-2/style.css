@@ -1,0 +1,54 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.5rem;
+    background-color: red;
+    background-image: radial-gradient(white, #5e6a7e);
+}
+
+/* header */
+
+header {
+    position: sticky;
+    top: 0;
+    color: white;
+    background-color: #1d273c;
+}
+
+nav {
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    color: #1d273c;
+}
+
+/* main */
+
+
+/* footer */
+
+footer {
+    position: sticky;
+    bottom: 0;
+    color: white;
+    background-color: #1d273c;
+}
