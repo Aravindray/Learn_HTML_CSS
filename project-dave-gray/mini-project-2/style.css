@@ -1,0 +1,59 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility */
+
+ul {
+    list-style-type: none;
+}
+
+/* main */
+
+body {
+    background-color: #c8ced4;
+    background-image: radial-gradient(#c8ced4, #8c94a3);
+    /* background-repeat: no-repeat; */
+    height: 100vh;
+}
+
+header, footer {
+    position: sticky;
+    background-color: #1d273c;
+    color: white;
+    text-align: center;
+    position: sticky;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+nav {
+    background-color: white;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+}
+
+a {
+    color: #1d273c;
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
