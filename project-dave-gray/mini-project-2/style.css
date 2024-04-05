@@ -66,6 +66,7 @@ div {
     background-color: #c9d3dc;
     gap: 0.5rem;
     border-radius: 30px;
+    scroll-margin-top: 8rem;
 }
 
 img {
