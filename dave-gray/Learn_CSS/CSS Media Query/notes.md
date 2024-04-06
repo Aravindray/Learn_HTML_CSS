@@ -1,9 +1,9 @@
 **Table of Content:**
-- [Common Media Query Breakpoints:](#common-media-query-breakpoints)
-- [Bootstrap Breakpoints:](#bootstrap-breakpoints)
-- [Tailwind breakpoints:](#tailwind-breakpoints)
+- [Common Media Query Breakpoints](#common-media-query-breakpoints)
+- [Bootstrap Breakpoints](#bootstrap-breakpoints)
+- [Tailwind Breakpoints](#tailwind-breakpoints)
 
-### Common Media Query Breakpoints:
+### Common Media Query Breakpoints
 | Breakpoint | Description |
 | ---------- | ----------- |
 | < 481px | Mobile Devices |
@@ -12,7 +12,7 @@
 | 1025px - 1200px | Desktops, Large screens |
 | 1201px and greater | Extra Large Screens, TVs |
 
-### Bootstrap Breakpoints:
+### Bootstrap Breakpoints
 | Breakpoint | Description |
 | ---------- | ----------- |
 | < 576px | <abbr title="Extra Small">xs</abbr> |
@@ -22,7 +22,7 @@
 | >= 1200px | <abbr title="Extra Large">xl</abbr> |
 | >= 1400px | <abbr title="double Extra Large">2xl</abbr> |
 
-### Tailwind breakpoints:
+### Tailwind Breakpoints
 | Breakpoint | Description |
 | -------- | ---------- |
 | < 640px | <abbr title="Extra Small">xs</abbr> |

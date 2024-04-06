@@ -1,0 +1,123 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Style */
+
+body {
+  font: 1.5rem sans-serif;
+  min-height: 100vh;
+  background-color: dodgerblue;
+  background-image: radial-gradient(whitesmoke, dodgerblue);
+  display: flex;
+  flex-direction: column;
+}
+
+header, nav, main, footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+header, footer {
+    position: sticky;
+    background-color: blue;
+    color: whitesmoke;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+nav {
+    background-color: #fff;
+    color: blue;
+    padding: 0.5rem;
+    border-bottom: 2px solid #000;
+}
+
+/* Media Query Syntax
+@media media type and (condition: breakpoint) {
+    // CSS Rules
+} */
+
+/* Media Type Ex: Screen, Print, Speech */
+/* Condition Ex: orientation: Landscape */
+/* Condition Ex: min-aspect-ratio: 16/9 | 7/4 */
+
+/* Media Query - Small */
+@media screen and (min-width: 576px) {
+    body {
+        background-color: lightgreen;
+        background-image: radial-gradient(whitesmoke, lightgreen);
+    }
+    nav {
+        display: none;
+    }
+    header, footer {
+        background-color: green;
+    }
+}
+
+/* Media Query - Medium */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: lightyellow;
+        background-image: radial-gradient(whitesmoke, lightyellow);
+    }
+    header, footer {
+        background-color: gold;
+    }
+}
+
+/* Media Query - Large */
+@media screen and (min-width: 992px) {
+    body {
+        background-color: lightcoral;
+        background-image: radial-gradient(whitesmoke, lightcoral);
+    }
+    header, footer {
+        background-color: firebrick;
+    }
+}
+
+/* Media Query - XL */
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: plum;
+        background-image: radial-gradient(whitesmoke, plum);
+    }
+    header, footer {
+        background-color: rebeccapurple;
+    }
+}
+
+/* Media Query - Mobile Device Landscape */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+    body {
+        background-color: lightseagreen;
+        background-image: radial-gradient(whitesmoke, lightseagreen);
+    }
+    header, footer {
+        background-color: seagreen;
+    }
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+    nav {
+        display: none;
+    }
+}
