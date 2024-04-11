@@ -25,6 +25,8 @@ hr {
 
 /* Remove Part Start */
 
+/* Pseudo Class */
+
 summary {
     font-size: x-large;
 }
@@ -86,6 +88,7 @@ details p {
 .layout img {
     width: 300px;
     height: auto;
+    border-radius: 50%;
 }
 
 .layout a {
@@ -93,4 +96,26 @@ details p {
     color: black;
 }
 
+.layout img:not([alt]) {
+    border: 3px solid;
+}
+
+/* .layout a:nth-child(3) :not(nav) {
+    background-color: #8a2be2;
+} */
+
+.layout a:nth-child(even) :not(nav) {
+    background-color: #8a2be2;
+}
+
+/* Pseudo Element */
+
+div {
+    margin: 1rem;
+    padding: 0.25rem;
+}
+
+.some-div h3::after {
+    content: ' H3';
+}
 /* Remove Part End */

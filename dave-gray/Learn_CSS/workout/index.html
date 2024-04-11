@@ -83,15 +83,71 @@
         </details>
         <details>
           <summary>Do you know how to select attribute of an element?</summary>
-          <p>use the square bracket [], for example img[alt].</p>
+          <p class="first-letter">use the square bracket [], for example img[alt].</p>
+        </details>
+        <details>
+          <summary>:not pseudo class</summary>
+          <p>If you want to select the particular element with absence of specific attribute we may use :not pseudo class, for example img:not([not])</p>
+        </details>
+        <details>
+          <summary>nth-child pseudo class</summary>
+          <p>
+            <code>
+              &lt;section class="container"&gt; <br>
+                &lt;div&gt; &lt;/div&gt; <br>
+                &lt;div&gt; &lt;/div&gt; <br>
+                &lt;div&gt; &lt;/div&gt; <br>
+                &lt;div&gt; &lt;/div&gt; <br>
+                &lt;div&gt; &lt;/div&gt; <br>
+              &lt;/section&gt;
+          </code> <br>
+          From the above code if we select the section:nth-child(2), it will not select the 2nd div element, it select the 2nd section element inside the body element or from it's ancestor element. So, if we want to select the second div element use this selector .container div:nth-child(2). Another values we may use odd, even 
+        </p>
+        </details>
+      </aside>
+    </article>
+    <br>
+    <hr>
+    <br>
+    <article class="pseudo-elements">
+      <section>
+        <details>
+          <summary>Pseudo Element</summary>
+          <p>
+            It will add the new element in html document.
+          </p>
+        </details>
+      </section>
+      <section class="five-div">
+        <div class="some-div">
+          <h3>Heading</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum est numquam repudiandae fuga eius consectetur ducimus excepturi in delectus nostrum. Consectetur blanditiis dolorem quibusdam minus obcaecati inventore nobis odio ad.</p>
+        </div>
+        <div class="some-div">
+          <h3>Heading</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum est numquam repudiandae fuga eius consectetur ducimus excepturi in delectus nostrum. Consectetur blanditiis dolorem quibusdam minus obcaecati inventore nobis odio ad.</p>
+        </div>
+        <div class="some-div">
+          <h3>Heading</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum est numquam repudiandae fuga eius consectetur ducimus excepturi in delectus nostrum. Consectetur blanditiis dolorem quibusdam minus obcaecati inventore nobis odio ad.</p>
+        </div>
+      </section>
+      <br>
+      <hr>
+      <br>
+      <aside>
+        <h2>Notes:</h2>
+        <details>
+          <summary>::before ::after pseudo element</summary>
+          <p>So if we want to add some img like anchor link if the target is blank we may use after element to add the open new tab img or forward image. <br>
+          <code> a[target]::after { <br> content = "img/link" <br> } </code></p>
         </details>
         <details>
           <summary></summary>
           <p></p>
         </details>
-      </aside>
+      </aside>      
     </article>
-    <article class="pseudo-elements"></article>
   </main>
   <!-- Remove Part End -->
 </body>
