@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning CSS - Pseudo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="../../../assets/css.png" />
+</head>
+
+<body>
+  <header>
+    <h1>CSS Pseudo</h1>
+  </header>
+  <hr>
+  <br>
+  <main>
+    <article class="pseudo-classes">
+      <section>
+        <details>
+          <summary>Pseudo Classes</summary>
+          <p>
+            Modifies the state of an element.
+          </p>
+        </details>
+      </section>
+      <section class="layout">
+        <nav id="back-to-nav">
+          <a href="#card-1">Card 1</a>
+          <a href="#card-2">Card 2</a>
+          <a href="#card-3">Card 3</a>
+          <a href="#card-4">Card 4</a>
+          <a href="#card-5">Card 5</a>
+        </nav>
+        <a href="#back-to-nav" target="_blank"><div class="card" id="card-1">
+          <img src="../../../assets/profile-1-500X500.png" alt="profile 1" width="500" height="500">
+          <h2>Person Name</h2>
+          <p>About...</p>
+        </div></a>
+        <a href="#back-to-nav"><div class="card" id="card-2">
+          <img src="../../../assets/profile-2-500X500.png" alt="profile 2" width="500" height="500">
+          <h2>Person Name</h2>
+          <p>About...</p>
+        </div></a>
+        <a href="#back-to-nav"><div class="card" id="card-3">
+          <img src="../../../assets/profile-3-500X500.png" alt="profile 3" width="500" height="500">
+          <h2>Person Name</h2>
+          <p>About...</p>
+        </div></a>
+        <a href="#back-to-nav"><div class="card" id="card-4">
+          <img src="../../../assets/profile-1-500X500.png" alt="profile 1" width="500" height="500">
+          <h2>Person Name</h2>
+          <p>About...</p>
+        </div></a>
+        <a href="#back-to-nav"><div class="card" id="card-5">
+          <img src="../../../assets/profile-2-500X500.png" width="500" height="500">
+          <h2>Person Name</h2>
+          <p>About...</p>
+        </div></a>
+      </section>
+      <br>
+      <hr>
+      <br>
+      <aside>
+        <h2>Notes:</h2>
+        <details>
+          <summary>:is pseudo class</summary>
+          <p class="first-letter">instead of use 2 different selectors like nav a:focus, nav a:hover we may use nav :is(a:focus, a:hover). This is also based on specificity.</p>
+        </details>
+        <details>
+          <summary>:any-link pseudo class</summary>
+          <p>Instead of using a:link, a:visited use a:any-link to keep you code <abbr title="Don't Repeat Yourself">DRY!</abbr></p>
+        </details>
+        <details>
+          <summary>:where pseudo class</summary>
+          <p>This is similar to :is but it will not consider specificity.</p>
+        </details>
+        <details>
+          <summary>:target pseudo class</summary>
+          <p>We may use it to highlight the target element by anchor tag.</p>
+        </details>
+        <details>
+          <summary>Do you know how to select attribute of an element?</summary>
+          <p class="first-letter">use the square bracket [], for example img[alt].</p>
+        </details>
+        <details>
+          <summary>:not pseudo class</summary>
+          <p>If you want to select the particular element with absence of specific attribute we may use :not pseudo class, for example img:not([not])</p>
+        </details>
+        <details>
+          <summary>nth-child pseudo class</summary>
+          <p>
+            <code>
+              &lt;section class="container"&gt; <br>
+                &lt;div&gt; &lt;/div&gt; <br>
+                &lt;div&gt; &lt;/div&gt; <br>
+                &lt;div&gt; &lt;/div&gt; <br>
+                &lt;div&gt; &lt;/div&gt; <br>
+                &lt;div&gt; &lt;/div&gt; <br>
+              &lt;/section&gt;
+          </code> <br>
+          From the above code if we select the section:nth-child(2), it will not select the 2nd div element, it select the 2nd section element inside the body element or from it's ancestor element. So, if we want to select the second div element use this selector .container div:nth-child(2). Another values we may use odd, even 
+        </p>
+        </details>
+      </aside>
+    </article>
+    <br>
+    <hr>
+    <br>
+    <article class="pseudo-elements">
+      <section>
+        <details>
+          <summary>Pseudo Element</summary>
+          <p>
+            It will add the new element in html document.
+          </p>
+        </details>
+      </section>
+      <section class="five-div">
+        <div class="some-div div-1">
+          <h3>Heading</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum est numquam repudiandae fuga eius consectetur ducimus excepturi in delectus nostrum. Consectetur blanditiis dolorem quibusdam minus obcaecati inventore nobis odio ad.</p>
+        </div>
+        <div class="some-div div-2">
+          <h3>Heading</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum est numquam repudiandae fuga eius consectetur ducimus excepturi in delectus nostrum. Consectetur blanditiis dolorem quibusdam minus obcaecati inventore nobis odio ad.</p>
+        </div>
+        <div class="some-div div-3">
+          <h3>Heading</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum est numquam repudiandae fuga eius consectetur ducimus excepturi in delectus nostrum. Consectetur blanditiis dolorem quibusdam minus obcaecati inventore nobis odio ad.</p>
+        </div>
+      </section>
+      <br>
+      <hr>
+      <br>
+      <aside>
+        <h2>Notes:</h2>
+        <details>
+          <summary>::before ::after pseudo element</summary>
+          <p>So if we want to add some img like anchor link if the target is blank we may use after element to add the open new tab img or forward image. <br>
+          <code> a[target]::after { <br> content = "img/link" <br> } </code></p>
+        </details>
+        <details>
+          <summary>open-quote property value</summary>
+          <p>for more details look div-3 class</p>
+        </details>
+        <details>
+          <summary>::first-letter & ::first-line pseudo element</summary>
+          <p class="first-letter">for more details look first-letter class, and div-2 for first-line pseudo element</p>
+        </details>
+        <details>
+          <summary></summary>
+          <p></p>
+        </details>
+      </aside>      
+    </article>
+  </main>
+</body>
+
+</html>
