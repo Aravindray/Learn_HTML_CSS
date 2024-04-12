@@ -22,3 +22,58 @@ header {
 hr {
     border: 2px solid;
 }
+
+/* Remove Part Start */
+
+/* Variables */
+
+:root {
+
+    /* Font */
+
+    --MAIN-HEIGHT: 80vh;
+
+    /* Color */
+
+    --BGCOLOR: steelblue;
+    --HEAD-FOOT: white;
+}
+
+header {
+    background-color: var(--HEAD-FOOT);
+    position: sticky;
+    top: 0;
+}
+
+body {
+    background-color: aqua;
+    background-image: radial-gradient(whitesmoke, var(--BGCOLOR));
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header, nav, main, footer {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+nav {
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 16px 5px -5px red;
+}
+
+main {
+    text-align: center;
+    height: var(--MAIN-HEIGHT);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--HEAD-FOOT);
+    position: sticky;
+    bottom: 0;
+}
+
+/* Remove Part End */
