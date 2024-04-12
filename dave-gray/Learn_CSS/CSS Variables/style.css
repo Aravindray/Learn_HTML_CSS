@@ -1,0 +1,55 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+
+:root {
+    /* Color */
+    --BG-COLOR: #475569;
+    --WHITE: white;
+    --HEAD-FOOT: #1d273c;
+    --FC: #1d273c;
+}
+
+/* General */
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--BG-COLOR);
+    background-image: radial-gradient(var(--WHITE), var(--BG-COLOR));
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+header, footer {
+    position: sticky;
+    background-color: var(--HEAD-FOOT);
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+nav {
+    background-color: var(--WHITE);
+    color: var(--FC);
+}
+
+main {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--FC);
+}
