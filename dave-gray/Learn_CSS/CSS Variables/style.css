@@ -15,12 +15,28 @@
 
     /* Color */
     --BG-COLOR: #475569;
+    --BG-RADIAL-COLOR: #475569;
     --WHITE: white;
     --HEAD-FOOT: #1d273c;
     --FC: #1d273c;
 
     /* General */
     --PADDING: 0.5rem;
+    --BORDER: 2px solid var(--FC);
+    --BOX-SHADOW: 0 5px 5px -5px red;
+
+    /* Square */
+    --SQUARE-BG-COLOR: papayawhip;
+    --SQUARE-SIZE: max(150px, 20vw);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --BG-COLOR: #000;
+        --WHITE: #fff;
+        --BG-RADIAL-COLOR: rgb(217, 217, 217);
+        --SQUARE-BG-COLOR: rgb(202, 174, 202);
+    }
 }
 
 /* General */
@@ -30,9 +46,16 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--BG-COLOR);
-    background-image: radial-gradient(var(--WHITE), var(--BG-COLOR));
+    background-image: radial-gradient(var(--WHITE), var(--BG-RADIAL-COLOR));
     height: 100vh;
     color: var(--WHITE);
+    text-align: center;
+}
+
+header, nav, footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
     text-align: center;
 }
 
@@ -52,15 +75,35 @@ footer {
 nav {
     background-color: var(--WHITE);
     color: var(--FC);
-    border-bottom: 2px solid var(--FC);
+    border-bottom: var(--BORDER);
     padding: var(--PADDING);
-    box-shadow: 0 15px 51px -5px red;
+    box-shadow: var(--BOX-SHADOW);
 }
 
 main {
     flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: var(--FC);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: min(4vw, 15px);
+}
+
+/* Features */
+
+.square {
+    background-color: var(--SQUARE-BG-COLOR);
+    width: var(--SQUARE-SIZE);
+    height: var(--SQUARE-SIZE);
+    border: var(--BORDER);
+    border-radius: 15px;
+    display: grid;
+    place-content: center;
+    font-size: var(--FS-XL);
+    box-shadow: var(--BOX-SHADOW);
+}
+
+.square--highlight {
+    --SQUARE-BG-COLOR: cornflowerblue;
 }
