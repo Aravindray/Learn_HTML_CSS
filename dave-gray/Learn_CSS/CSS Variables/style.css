@@ -9,22 +9,30 @@
 /* Variables */
 
 :root {
+    /* Font */
+    --FS: 1.5rem;
+    --FS-XL: 3rem;
+
     /* Color */
     --BG-COLOR: #475569;
     --WHITE: white;
     --HEAD-FOOT: #1d273c;
     --FC: #1d273c;
+
+    /* General */
+    --PADDING: 0.5rem;
 }
 
 /* General */
 
 body {
+    font-size: var(--FS);
     display: flex;
     flex-direction: column;
     background-color: var(--BG-COLOR);
     background-image: radial-gradient(var(--WHITE), var(--BG-COLOR));
     height: 100vh;
-    color: white;
+    color: var(--WHITE);
     text-align: center;
 }
 
@@ -44,10 +52,13 @@ footer {
 nav {
     background-color: var(--WHITE);
     color: var(--FC);
+    border-bottom: 2px solid var(--FC);
+    padding: var(--PADDING);
+    box-shadow: 0 15px 51px -5px red;
 }
 
 main {
-    height: 90%;
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
