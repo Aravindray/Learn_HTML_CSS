@@ -85,6 +85,7 @@ footer {
 main {
     flex-grow: 1;
     display: flex;
+    flex-wrap: wrap;
 }
 
 article {
@@ -101,13 +102,14 @@ aside {
     background-color: var(--ASIDE-BG-COLOR);
     color: var(--LIGHT-COLOR);
     font-size: var(--FS-SM);
+    font-style: italic;
     flex-basis: 500px;
     flex-grow: 1;
     /* width: 700px; */
 }
 
 .container {
-    padding: var(--PADDING);
+    margin-top: 10px;
 }
 
 #min {
@@ -116,6 +118,43 @@ aside {
 
 #max {
     font-size: max(1.25rem, 4vh);
+}
+
+#brightness a:any-link {
+    color: firebrick;
+    text-decoration: none;
+}
+
+#brightness :is(a:hover, a:focus) {
+    filter: brightness(200%);
+    /* opacity: 0.6; */
+}
+
+#hue-rotate a:any-link {
+    color: red;
+    text-decoration: none;
+}
+
+#hue-rotate :is(a:hover, a:focus) {
+    filter: hue-rotate(180deg);
+}
+
+/* Custom Attributes */
+
+.tooltip {
+    /* text-decoration: 2px dotted black; */
+    border-bottom: 2px dotted black;
+    position: relative;
+}
+
+.tooltip:hover::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color: var(--DARK-COLOR);
+    white-space: nowrap;
+    top: -30px;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 /* Media Query */
@@ -128,5 +167,20 @@ aside {
         --HEAD-FOOT-BG-COLOR: #006466;
         --NAV-BG-COLOR: #4f0147;
         --ASIDE-BG-COLOR: #00406c;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    main {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    article {
+        width: calc(70% - 5px);
+    }
+
+    aside {
+        width: calc(30% - 5px);
     }
 }
