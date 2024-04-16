@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+
+:root {
+    /* Font */
+    --FF: Nunito, sans-serif;
+    --FS: clamp(1.25rem, 5vh, 1.75rem);
+    --FS-SM: clamp(1.12rem, 3vh, 1.37rem);
+    --FS-XL: 2.25rem;
+
+    /* Color */
+    --LIGHT-COLOR: #FFF;
+    --DARK-COLOR: #000;
+    --HEAD-FOOT-BG-COLOR: #ff006e;
+    --NAV-BG-COLOR: #8338ec;
+    --ASIDE-BG-COLOR: #3a86ff;
+    --RADIAL-1: #a2d2ff;
+    --RADIAL-2: #bde0fe;
+    --RADIAL-3: #ffc8dd;
+    --RADIAL-4: #cdb4db;
+
+    /* General */
+    --PADDING: 0.5em;
+    --SHADOWS: 0 6px 5px -5px var(--DARK-COLOR);
+}
+
+/* General */
+
+body {
+    font: var(--FS) var(--FF);
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+}
+
+header,
+footer {
+    position: sticky;
+    color: var(--LIGHT-COLOR);
+    background-color: var(--HEAD-FOOT-BG-COLOR);
+    text-align: center;
+}
+
+header {
+    top: 0;
+}
+
+nav {
+    background-color: var(--NAV-BG-COLOR);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5rem;
+    justify-content: space-evenly;
+    box-shadow: var(--SHADOWS);
+}
+
+nav a:any-link {
+    color: var(--LIGHT-COLOR);
+    text-decoration: none;
+}
+
+nav :is(a:hover, a:focus) {
+    text-decoration: underline;
+    color: var(--DARK-COLOR);
+}
+
+nav a:active {
+    color: var(--HEAD-FOOT-BG-COLOR);
+}
+
+footer {
+    bottom: 0;
+    box-shadow: var(--SHADOWS) inset;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+}
+
+article {
+    flex-grow: 2;
+    flex-basis: 1200px;
+    background-image: radial-gradient(var(--RADIAL-1), var(--RADIAL-2), var(--RADIAL-3), var(--RADIAL-4));
+}
+
+section {
+    scroll-margin-top: 8rem;
+}
+
+aside {
+    background-color: var(--ASIDE-BG-COLOR);
+    color: var(--LIGHT-COLOR);
+    font-size: var(--FS-SM);
+    flex-basis: 500px;
+    flex-grow: 1;
+    /* width: 700px; */
+}
+
+.container {
+    padding: var(--PADDING);
+}
+
+#min {
+    font-size: min(1.75rem, 5vh);
+}
+
+#max {
+    font-size: max(1.25rem, 4vh);
+}
+
+/* Media Query */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Color */
+        --LIGHT-COLOR: #FFF;
+        --DARK-COLOR: #000;
+        --HEAD-FOOT-BG-COLOR: #006466;
+        --NAV-BG-COLOR: #4f0147;
+        --ASIDE-BG-COLOR: #00406c;
+    }
+}
