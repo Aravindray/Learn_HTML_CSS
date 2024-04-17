@@ -16,6 +16,9 @@
     --LIGHT-COLOR: #fff;
     --DARK-COLOR: #000;
     --NAV-BG-COLOR: #00f;
+
+    /* Square */
+    --SQUARE-BG-COLOR: bisque;
 }
 
 /* general */
@@ -50,4 +53,23 @@ nav {
 
 main {
     flex-grow: 1;
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 300px));
+    gap: min(2vw, 20px);
+    justify-content: center;
+    padding: 1rem;
+}
+
+.square {
+    background-color: var(--SQUARE-BG-COLOR);
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    box-shadow: 0 4px 4px -2px black inset;
+    align-items: center;
+}
+
+.square--highlight {
+    --SQUARE-BG-COLOR: cornflowerblue;
 }
