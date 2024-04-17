@@ -85,7 +85,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;
-    align-content: space-evenly;
+    align-content: space-between;
     align-items: center;
 }
 
