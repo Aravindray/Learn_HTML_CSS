@@ -1,0 +1,30 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* animation */
+
+main {
+    border: 2px solid;
+    width: 800px;
+    height: 500px;
+    background-color: mediumblue;
+}
+
+article {
+    border: 2px solid;
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    transition: all 1s cubic-bezier(0.56, 0.54, 0.84, 1.51);
+}
+
+main:hover article{
+    transform: translateX(calc(800px - 200px - 2px));
+    /* transform: translateY(calc(500px - 200px - 2px)); */
+    /* transform: translateX(100%); */
+}
