@@ -1,0 +1,53 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variables */
+
+:root {
+    /* Font */
+    --FS: clamp(1rem, 4vh, 1.5rem);
+
+    /* Color */
+    --HEAD-FOOT-BG-COLOR: #f00;
+    --LIGHT-COLOR: #fff;
+    --DARK-COLOR: #000;
+    --NAV-BG-COLOR: #00f;
+}
+
+/* general */
+
+body {
+    font-size: var(--FS);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+header, footer {
+    background-color: var(--HEAD-FOOT-BG-COLOR);
+    color: var(--LIGHT-COLOR);
+    position: sticky;
+    width: 100%;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+nav {
+    background-color: var(--NAV-BG-COLOR);
+}
+
+main {
+    flex-grow: 1;
+}
