@@ -6,25 +6,48 @@
     box-sizing: border-box;
 }
 
-/* animation */
+/* General */
 
 main {
-    border: 2px solid;
+    background-color: bisque;
     width: 800px;
     height: 500px;
-    background-color: mediumblue;
+    border: 2px solid;
 }
 
 article {
-    border: 2px solid;
+    background-color: darkorange;
     width: 200px;
+    margin: 2rem auto;
     height: 200px;
-    background-color: lightgreen;
-    transition: all 1s cubic-bezier(0.56, 0.54, 0.84, 1.51);
+    border: 1px solid;
+    animation-name: skewLeftRight;
+    animation-duration: 2s;
+    /* animation-timing-function: ; */
+    /* animation-fill-mode: ; */
+    animation-iteration-count: infinite;
+    display: grid;
+    place-content: center;
 }
 
-main:hover article{
-    transform: translateX(calc(800px - 200px - 2px));
-    /* transform: translateY(calc(500px - 200px - 2px)); */
-    /* transform: translateX(100%); */
+main:hover article {
+    animation-play-state: paused;
+}
+
+@keyframes skewLeftRight {
+    0% {
+        transform: skew(10deg);
+    }
+    25% {
+        transform: translateY(-25%);
+    }
+    50% {
+        transform: skew(30deg);
+    }
+    75% {
+        transform: translateY(25%);
+    }
+    100% {
+        transform: skew(50deg);
+    }
 }
