@@ -6,48 +6,60 @@
     box-sizing: border-box;
 }
 
-/* General */
-
-main {
-    background-color: bisque;
-    width: 800px;
-    height: 500px;
-    border: 2px solid;
+html {
+    font-size: 1.5rem;
 }
 
-article {
-    background-color: darkorange;
-    width: 200px;
-    margin: 2rem auto;
-    height: 200px;
-    border: 1px solid;
-    animation-name: skewLeftRight;
-    animation-duration: 2s;
-    /* animation-timing-function: ; */
-    /* animation-fill-mode: ; */
+button {
+    background-color: #fbd2e3;
+    border: 5px solid #f5396e;
+    color: #f5396e;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+
+    /* transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s; */
+
+    transition: all 0.3s;
+}
+
+button:hover {
+    transform: translateY(-10px);
+    background-color: #f5396e;
+    color: #FFF;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    flex-basis: 100px;
+    transform: rotate(90deg);
+}
+
+@keyframes slidInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+section {
+    animation-name: slidInLeft;
+    animation-duration: 3.2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
     animation-iteration-count: infinite;
-    display: grid;
-    place-content: center;
-}
-
-main:hover article {
-    animation-play-state: paused;
-}
-
-@keyframes skewLeftRight {
-    0% {
-        transform: skew(10deg);
-    }
-    25% {
-        transform: translateY(-25%);
-    }
-    50% {
-        transform: skew(30deg);
-    }
-    75% {
-        transform: translateY(25%);
-    }
-    100% {
-        transform: skew(50deg);
-    }
+    animation-direction: alternate;
+    /* animation-fill-mode: ; */
 }
