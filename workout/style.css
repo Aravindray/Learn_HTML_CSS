@@ -1,51 +1,43 @@
-/* Reset */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 1.5rem;
-}
-
-button {
-    background-color: #fbd2e3;
-    border: 5px solid #f5396e;
-    color: #f5396e;
-    font-weight: bold;
-    font-size: 1.5rem;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-
-    /* transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s; */
-
-    transition: all 0.3s;
-}
-
-button:hover {
-    transform: translateY(-10px);
-    background-color: #f5396e;
-    color: #FFF;
-}
-
 body {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
 
-hr {
-    flex-basis: 100px;
-    transform: rotate(90deg);
+/* Utility Classes */
+
+.animation {
+    animation-duration: 2s;
+    animation-fill-mode: both;
 }
 
-@keyframes slidInLeft {
+.animation.animation--infinity {
+    animation-iteration-count: infinite;
+}
+
+.animation.animation--delay-1s {
+    animation-delay: 1s;
+}
+
+.animation.animation-fast {
+    animation-duration: 0.5s; 
+}
+
+.animation.animation-slow {
+    animation-duration: 4s;
+}
+
+/* Animation */
+.slideInLeft {
+    animation-name: slideInLeft;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes slideInLeft {
     from {
         transform: translateX(-300px);
     }
@@ -54,12 +46,46 @@ hr {
     }
 }
 
-section {
-    animation-name: slidInLeft;
-    animation-duration: 3.2s;
-    animation-timing-function: ease-in;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
+.slideInRight {
+    animation-name: slideInRight;
     animation-direction: alternate;
-    /* animation-fill-mode: ; */
+    animation-timing-function: linear;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.rotate {
+    animation-name: rotate;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-origin {
+    animation-name: rotate-origin;
+    animation-timing-function: linear;
+    transform-origin: bottom left;
+}
+
+@keyframes rotate-origin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
 }
