@@ -29,14 +29,54 @@ header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    padding: 0.25rem 0.5rem;
 }
 
 .menu-button {
     width: 48px;
     height: 48px;
     background-color: transparent;
-    /* border: 1px solid red; */
     border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-icon, .menu-icon::before, .menu-icon::after {
+    width: 30px;
+    height: 5px;
+    background-color: var(--LIGHT-COLOR);
+    border-radius: 2px;
+    position: absolute;
+}
+
+.menu-icon::before {
+    content: '';
+    transform: translate(-15px, -10px);
+}
+
+.menu-icon::after {
+    content: '';
+    transform: translate(-15px, 10px);
+}
+
+:is(header:hover, header:focus-within) .menu-icon {
+    background-color: transparent;
+    transform: rotate(540deg);
+    transition: all 0.3s;
+}
+
+:is(header:hover, header:focus-within) .menu-icon::before {
+    transform: translateX(-15px) rotate(45deg);
+}
+
+:is(header:hover, header:focus-within) .menu-icon::after {
+    transform: translateX(-15px) rotate(-45deg);
+}
+
+:is(header:hover, header:focus-within) nav {
+    display: block;
 }
 
 a[target]::after {
@@ -45,4 +85,52 @@ a[target]::after {
 
 nav a:any-link {
     color: var(--LIGHT-COLOR);
+}
+
+nav {
+    display: none;
+    transform-origin: top center;
+    animation: showMenu 0.5s forwards;
+    background-color: var(--DARK-COLOR);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+nav li {
+    border-top: 2px solid var(--LIGHT-COLOR);
+    padding: 0.3rem;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 80%;
+    margin: auto;
+    font-weight: bold;
+}
+
+:is(nav) a:hover, a:focus {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+/* Animation */
+
+@keyframes showMenu {
+    0% {
+        transform: scaleY(0);
+    }
+
+    80% {
+        transform: scaleY(1.2);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
 }
