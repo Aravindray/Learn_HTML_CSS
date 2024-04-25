@@ -1,0 +1,52 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variables */
+
+:root {
+    /* Color */
+    --DARK-COLOR: #000;
+    --LIGHT-COLOR: #fff;
+}
+
+/* Basic */
+
+html {
+    font-size: 1.5rem;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--DARK-COLOR);
+    color: var(--LIGHT-COLOR);
+}
+
+.header-title-line {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.menu-button {
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    /* border: 1px solid red; */
+    border: none;
+}
+
+a[target]::after {
+    content: url("../../../assets/whilte-hyperlink-forward-16x16.png");
+}
+
+nav a:any-link {
+    color: var(--LIGHT-COLOR);
+}
