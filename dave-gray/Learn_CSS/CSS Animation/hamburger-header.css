@@ -20,10 +20,6 @@ html {
     font-size: 1.5rem;
 }
 
-body {
-    min-height: 100vh;
-}
-
 header {
     background-color: var(--DARK-COLOR);
     color: var(--LIGHT-COLOR);
@@ -44,7 +40,7 @@ header {
 }
 
 a[target]::after {
-    content: url("../../../assets/whilte-hyperlink-forward-16x16.png");
+    content: url("../../../assets/white-hyperlink-forward-16x16.png");
 }
 
 nav a:any-link {
