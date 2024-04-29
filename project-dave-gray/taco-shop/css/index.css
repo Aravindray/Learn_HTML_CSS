@@ -1,0 +1,60 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&display=swap');
+
+/* Reset */
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, button, textarea {
+    font: inherit;
+}
+
+/* Variables */
+
+:root {
+    /* Color */
+    --BGCOLOR: orange;
+    --BGCOLOR-FADE: rgb(252,220,160);
+    --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
+    --BODY-BGCOLOR: #FFF;
+    --FONT-COLOR: #000;
+
+    /* Fonts */
+    --FF: Nunito, sans-serif;
+    --FF-HEADING: 'Fugaz one', cursive;
+    --FS: clamp(1rem, 2.2vh, 1.5rem)
+}
+
+/* Utility */
+.offscreen {
+    position: absolute;
+    left: -1000px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.center {
+    text-align: center;
+}
+
+/* General Style */
+
+html {
+    scroll-behavior: smooth;
+    font-size: var(--FS);
+    background-color: ;
+}
+
+/* Animation */
