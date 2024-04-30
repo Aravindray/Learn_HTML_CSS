@@ -1,0 +1,70 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&display=swap');
+
+/* Reset */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, button, textarea {
+    font: inherit;
+}
+
+/* Variables */
+:root {
+
+    /* Fonts */
+    --FF: 'Nunito', sans-serif;
+    --HEAD-FF: 'Fugaz One', cursive;
+    --FS: clamp(1rem, 2.2vh, 1.5rem);
+    
+    /* Color */
+    --BGCOLOR: orange;
+    --BGCOLOR-FADE: rgb(252,220,160);
+    --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
+    --BODY-BGCOLOR: #fff;
+    --FONT-COLOR: #000;
+    --BORDER-COLOR: #333;
+    --HIGHLIGHT-COLOR: rgb(51, 178, 51);
+    --LINK-COLOR: #000;
+    --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
+    --LINK-ACTIVE: orange;
+    --HEADER-BGCOLOR: #000;
+    --HEADER-COLOR: #fff;
+    --NAV-BGCOLOR: #fff;
+    --HERO-BGCOLOR: rgba(51, 178, 51, 0.75);
+    --HERO-COLOR: #fff;
+    
+    /* Padding */
+    --PADDING-TB: 0.25em;
+    --PADDING-SIDE: 2.5%;
+
+    /* Margin */
+    
+    /* Border */
+    --BORDER: 1px solid var(--BORDER-COLOR);
+}
+/* Utility */
+.offscreen {
+    position: absolute;
+    left: -1000px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+/* Basic Style */
+/* Header */
+/* Footer */
+/* Animation */
+/* Media Query */
