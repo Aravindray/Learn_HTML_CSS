@@ -124,7 +124,7 @@ a:active {
 }
 
 .header__nav {
-    background-color: var(--HEADER-COLOR);
+    background-color: var(--NAV-BGCOLOR);
     border-bottom: var(--BORDER);
     box-shadow: 0 6px 5px -5px var(--HEADER-BGCOLOR);
     font-weight: bold;

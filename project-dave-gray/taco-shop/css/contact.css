@@ -126,7 +126,7 @@ a:hover, a:focus-visible {
 }
 
 .header__nav {
-    background-color: var(--HEADER-COLOR);
+    background-color: var(--NAV-BGCOLOR);
     padding: var(--PADDING-TB) var(--PADDING-SIDE);
     border-bottom: var(--BORDER);
     box-shadow: 0 6px 5px -5px var(--HEADER-BGCOLOR);
@@ -137,6 +137,7 @@ a:hover, a:focus-visible {
     list-style-type: none;
     justify-content: space-evenly;
     font-weight: bold;
+    gap: 1em;
 }
 
 /* Footer */
@@ -147,5 +148,11 @@ a:hover, a:focus-visible {
     position: sticky;
     bottom: 0;
     text-align: center;
+    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+}
+
+/* Main */
+
+.main {
     padding: var(--PADDING-TB) var(--PADDING-SIDE);
 }

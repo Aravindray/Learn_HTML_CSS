@@ -10,10 +10,10 @@
     <link rel="icon" href="../../assets/taco.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <h1>Little Taco Shop</h1>
-        <nav>
-            <ul>
+    <header class="header">
+        <h1 class="header__h1">Little Taco Shop</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#menu">Menu</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -21,24 +21,26 @@
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="hero">
         <figure>
             <img src="../../assets/tacos_tray_1000x667.png" alt="Tray of Tacos" width="1000" height="667" title="We Love Tray of Tacos">
-            <figcaption>A Tray of Tasty Tacos</figcaption>
+            <figcaption class="offscreen">A Tray of Tasty Tacos</figcaption>
         </figure>
     </section>
-    <main>
-        <h2>Hours</h2>
-        <p>We are open 6 days a week!</p>
-        <dl>
-            <dt>Monday - Thursday</dt>
-            <dd><time datetime="11:00">11:00 AM</time> - <time datetime="21:00">09:00 PM</time></dd>
-            <dt>Friday - Saturday</dt>
-            <dd><time datetime="11:00">11:00 AM</time> - <time datetime="23:00">11:00 PM</time></dd>
-        </dl>
+    <main class="main">
+        <article class="main__article">
+            <h2>Hours</h2>
+            <p>We are open 6 days a week!</p>
+            <dl>
+                <dt>Monday - Thursday</dt>
+                <dd><time datetime="11:00">11:00 AM</time> - <time datetime="21:00">09:00 PM</time></dd>
+                <dt>Friday - Saturday</dt>
+                <dd><time datetime="11:00">11:00 AM</time> - <time datetime="23:00">11:00 PM</time></dd>
+            </dl>
+        </article>
     </main>
-    <footer>
-        <p>Copyright &copy; Little Taco Shop</p>
+    <footer class="footer">
+        <p><span class="nowrap">Copyright &copy;</span><span class="nowrap"> Little Taco Shop</span></p>
     </footer>
 </body>
 </html>
