@@ -53,6 +53,25 @@ input, button, textarea {
     /* Border */
     --BORDER: 1px solid var(--BORDER-COLOR);
 }
+
+/* Theme Preference */
+@media (prefers-color-scheme: light) {
+    :root {
+        --BGCOLOR: #000;
+        --BGCOLOR-FADE: gray;
+        --HEADER-COLOR: whitesmoke;
+        --NAV-BGCOLOR: rgb(20, 20, 20);
+        --HERO-COLOR: #333;
+        --BODY-BGCOLOR: #333;
+        --FONT-COLOR: whitesmoke;
+        --HIGHLIGHT-COLOR: whitesmoke;
+        --BORDER-COLOR: whitesmoke;
+        --LINK-COLOR: whitesmoke;
+        --LINK-HOVER: orange;
+        --LINK-ACTIVE: rgb(252, 200, 103);
+    }
+}
+
 /* Utility */
 .offscreen {
     position: absolute;
@@ -170,5 +189,12 @@ a:active {
     margin-top: 1em;
 }
 
-
 /* Media Query */
+@media screen and (min-width: 576px) {
+    .header__h1::before {
+        content: '🌮 ';
+    }
+    .header__h1::after {
+        content: ' 🌮';
+    }
+}

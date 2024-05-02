@@ -29,18 +29,19 @@ input, button, textarea {
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
     /* Color */
-    --BGCOLOR: orange;
     --BGCOLOR-FADE: rgb(252,220,160);
+    --BGCOLOR: orange;
     --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
     --BODY-BGCOLOR: #fff;
-    --FONT-COLOR: #000;
     --BORDER-COLOR: #333;
-    --HIGHLIGHT-COLOR: rgb(51, 178, 51);
-    --LINK-COLOR: #000;
-    --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
-    --LINK-ACTIVE: orange;
+    --BUTTON-COLOR: #fff;
+    --FONT-COLOR: #000;
     --HEADER-BGCOLOR: #000;
     --HEADER-COLOR: #fff;
+    --HIGHLIGHT-COLOR: rgb(51, 178, 51);
+    --LINK-ACTIVE: orange;
+    --LINK-COLOR: #000;
+    --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
     --NAV-BGCOLOR: #fff;
 
     /* Padding */
@@ -53,6 +54,25 @@ input, button, textarea {
     /* Border */
     --BORDER: 1px solid var(--BORDER-COLOR);
     --BORDER-RADIUS: 15px;
+}
+
+/* Theme Preference */
+@media (prefers-color-scheme: light) {
+    :root {
+        --BGCOLOR-FADE: gray;
+        --BGCOLOR: #000;
+        --BODY-BGCOLOR: #333;
+        --BORDER-COLOR: whitesmoke;
+        --BUTTON-COLOR: #000;
+        --FONT-COLOR: whitesmoke;
+        --HEADER-COLOR: whitesmoke;
+        --HERO-COLOR: #333;
+        --HIGHLIGHT-COLOR: whitesmoke;
+        --LINK-ACTIVE: rgb(252, 200, 103);
+        --LINK-COLOR: whitesmoke;
+        --LINK-HOVER: orange;
+        --NAV-BGCOLOR: rgb(20, 20, 20);
+    }
 }
 
 /* Utility */
@@ -202,5 +222,15 @@ a:hover, a:focus-visible {
     padding: 0.5em;
     border-radius: var(--BORDER-RADIUS);
     background-color: var(--HIGHLIGHT-COLOR);
-    color: var(--HEADER-COLOR);
+    color: var(--BUTTON-COLOR);
+}
+
+/* Media Query */
+@media screen and (min-width: 576px) {
+    .header__h1::before {
+        content: '🌮 ';
+    }
+    .header__h1::after {
+        content: ' 🌮';
+    }
 }

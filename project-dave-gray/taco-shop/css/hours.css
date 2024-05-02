@@ -28,18 +28,18 @@ input, button, textarea {
     --FS: clamp(1rem, 2.2vh, 1.5rem);
     
     /* Color */
-    --BGCOLOR: orange;
     --BGCOLOR-FADE: rgb(252,220,160);
+    --BGCOLOR: orange;
     --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
     --BODY-BGCOLOR: #FFF;
-    --FONT-COLOR: #000;
     --BORDER-COLOR: #333;
-    --HIGHLIGHT-COLOR: rgb(51, 178, 51);
-    --LINK-COLOR: #000;
-    --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
-    --LINK-ACTIVE: orange;
+    --FONT-COLOR: #000;
     --HEADER-BGCOLOR: #000;
     --HEADER-COLOR: white;
+    --HIGHLIGHT-COLOR: rgb(51, 178, 51);
+    --LINK-ACTIVE: orange;
+    --LINK-COLOR: #000;
+    --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
     --NAV-BGCOLOR: white;
 
     /* Padding */
@@ -51,6 +51,24 @@ input, button, textarea {
 
     /* Margin */
     --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
+}
+
+/* Theme Preference */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --BGCOLOR-FADE: gray;
+        --BGCOLOR: #000;
+        --BODY-BGCOLOR: #333;
+        --BORDER-COLOR: whitesmoke;
+        --FONT-COLOR: whitesmoke;
+        --HEADER-COLOR: whitesmoke;
+        --HERO-COLOR: #333;
+        --HIGHLIGHT-COLOR: whitesmoke;
+        --LINK-ACTIVE: rgb(252, 200, 103);
+        --LINK-COLOR: whitesmoke;
+        --LINK-HOVER: orange;
+        --NAV-BGCOLOR: rgb(20, 20, 20);
+    }
 }
 
 /* Utility */
@@ -159,4 +177,14 @@ a:hover, a:focus-visible {
     scroll-margin-top: 6.5rem;
     margin: var(--MARGIN);
     min-height: calc(100vh - 20rem);
+}
+
+/* Media Query */
+@media screen and (min-width: 576px) {
+    .header__h1::before {
+        content: '🌮 ';
+    }
+    .header__h1::after {
+        content: ' 🌮';
+    }
 }
