@@ -42,8 +42,6 @@ input, button, textarea {
     --HEADER-BGCOLOR: #000;
     --HEADER-COLOR: #fff;
     --NAV-BGCOLOR: #fff;
-    --HERO-BGCOLOR: rgba(51, 178, 51, 0.75);
-    --HERO-COLOR: #fff;
     
     /* Padding */
     --PADDING-TB: 0.25em;
