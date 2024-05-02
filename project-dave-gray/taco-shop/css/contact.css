@@ -223,6 +223,7 @@ a:hover, a:focus-visible {
     border-radius: var(--BORDER-RADIUS);
     background-color: var(--HIGHLIGHT-COLOR);
     color: var(--BUTTON-COLOR);
+    font-weight: bold;
 }
 
 /* Media Query */
