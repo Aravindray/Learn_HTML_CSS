@@ -124,10 +124,10 @@ a:active {
 }
 
 .header__h1 {
-    text-align: center;
     background-color: var(--HEADER-BGCOLOR);
     color: var(--HEADER-COLOR);
     padding: var(--PADDING-TB) var(--PADDING-SIDE);
+    text-align: center;
 }
 
 .header__nav {
@@ -142,9 +142,11 @@ a:active {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
-    gap: 1rem;    
+    gap: 1rem;
 }
+
 /* Hero */
+
 .hero {
     position: relative;
 }

@@ -48,6 +48,7 @@ input, button, textarea {
     --PADDING-SIDE: 2.5%;
 
     /* Margin */
+    --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
     
     /* Border */
     --BORDER: 1px solid var(--BORDER-COLOR);
@@ -154,5 +155,20 @@ a:active {
 .main {
     padding: var(--PADDING-TB) var(--PADDING-SIDE);
 }
+
+.main__article:first-child {
+    scroll-margin-top: 6.5rem;
+    margin: var(--MARGIN);
+    min-height: calc(100vh - 20rem);
+}
+
+.about__trivia {
+    margin: var(--MARGIN);
+}
+
+.about__trivia-answer {
+    margin-top: 1em;
+}
+
 
 /* Media Query */

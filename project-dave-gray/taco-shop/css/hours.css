@@ -48,6 +48,9 @@ input, button, textarea {
 
     /* Border */
     --BORDER: 1px solid var(--BORDER-COLOR);
+
+    /* Margin */
+    --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
 }
 
 /* Utility */
@@ -121,6 +124,8 @@ a:hover, a:focus-visible {
 
 .header__nav {
     background-color: var(--NAV-BGCOLOR);
+    border-bottom: var(--BORDERS);
+    box-shadow: 0 6px 5px -5px var(--BORDER-COLOR);
 }
 
 .header__ul {
@@ -148,4 +153,10 @@ a:hover, a:focus-visible {
 
 .main {
     padding: var(--PADDING-TB) var(--PADDING-SIDE);
+}
+
+.main__article {
+    scroll-margin-top: 6.5rem;
+    margin: var(--MARGIN);
+    min-height: calc(100vh - 20rem);
 }
